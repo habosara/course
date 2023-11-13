@@ -1,44 +1,100 @@
-body{
-  background-color:#ECE3CE;
-  font-size:16px;
-  font-family: 'Figtree', sans-serif;
-  color: #333333;
-  margin: 0;
+body {
+    background-color: #ECE3CE;
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    color: #333333;
+    margin: 0;
 }
 
-header{
+header {
     max-width: 100%;
     background-color: #739072;
     box-sizing: border-box;
     padding: 20px;
 }
 
-nav{
+nav {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.logo{
+.logo {
     width: 120px;
 }
 
-main{
+main {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
-h1{
-    color: #4F6F52;
+.hero-container {
+    max-width: 100%;
+    height: 60vh;
+    background: url(images/falloftheusherhouse.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px 0;
+
+}
+
+.gradient-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(25, 34, 25);
+    background: -moz-linear-gradient(0deg, rgba(25, 34, 25, 1) 0%, rgba(58, 77, 57, 0) 63%);
+    background: -webkit-linear-gradient(0deg, rgba(25, 34, 25, 1) 0%, rgba(58, 77, 57, 0) 63%);
+    background: linear-gradient(0deg, rgba(25, 34, 25, 1) 0%, rgba(58, 77, 57, 0) 63%);
+}
+
+.hero-content {
+    z-index: 1;
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 20px;
+}
+
+.hero-content p, h1{
+    margin: 0;
+}
+
+.hero-content p {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.hero-content h1 {
+    color: #739072;
     font-size: 2.6em;
 }
 
-p{
+h2 {
+   
+    font-size: 1.8em;
+}
+
+p {
     line-height: 150%;
 }
 
-footer{
+footer {
     max-width: 100%;
     background-color: #739072;
     box-sizing: border-box;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer a{
+    text-decoration: none;
+    font-style: italic;
+    font-size: 1em;
+    color: #fff;
 }
