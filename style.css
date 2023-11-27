@@ -103,7 +103,8 @@ text-align: center;
 color: #739072;
 }
 
-.message-container input, textarea{
+.message-container input, textarea {
+
     box-sizing: border-box;
     padding: 10px;
     border-radius: 6px;
