@@ -95,7 +95,8 @@ p {
     box-shadow: rgba(207, 200, 183, 0.6) 0px 20px 25px -5px, rgba(99, 93, 80, 0.1) 0px 10px 10px -5px;
 }
 
-.message-container p{
+.message-container p {
+
 font-weight: 600;
 font-size: 18px;
 text-align: center;
