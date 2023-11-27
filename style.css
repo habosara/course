@@ -58,7 +58,8 @@ main {
     margin: 20px;
 }
 
-.hero-content p, h1{
+.hero-content p, h1 {
+
     margin: 0;
 }
 
