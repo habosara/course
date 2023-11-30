@@ -38,7 +38,6 @@ main {
     justify-content: center;
     align-items: flex-end;
     margin: 20px 0;
-
 }
 
 .gradient-layer {
@@ -59,7 +58,6 @@ main {
 }
 
 .hero-content p, h1 {
-
     margin: 0;
 }
 
@@ -75,7 +73,6 @@ main {
 }
 
 h2 {
-   
     font-size: 1.8em;
 }
 
@@ -84,7 +81,6 @@ p {
 }
 
 .message-container {
-
     background-color: #fff;
     border-radius: 8px;
     width: 400px;
@@ -96,7 +92,6 @@ p {
 }
 
 .message-container p {
-
 font-weight: 600;
 font-size: 18px;
 text-align: center;
@@ -104,7 +99,6 @@ color: #739072;
 }
 
 .message-container input, textarea {
-
     box-sizing: border-box;
     padding: 10px;
     border-radius: 6px;
