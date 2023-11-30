@@ -136,6 +136,13 @@ color: #739072;
     font-size: inherit;
     cursor: pointer;
     width: 100%;
+    transition: all 0.3s linear;
+}
+
+.message-container button:hover {
+    background-color: #cddbcd;
+    color: #739072;
+    
 }
 
 footer {
@@ -153,4 +160,38 @@ footer a{
     font-style: italic;
     font-size: 1em;
     color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+body {
+    background-color: #121212;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+    color: #fff;
+}
+
+.message-container {
+    background-color: #282828;
+    box-shadow: none;
+}
+
+.message-container input, textarea {
+    background-color: #3f3f3f;
+    border: 1px solid #3f3f3f;
+}
+
+.message-container input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.message-container button {
+    background-color: #829c81;
+}
+
+.message-container p {
+    color: #fff;
+}
+
 }
