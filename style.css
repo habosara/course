@@ -190,6 +190,11 @@ h2 {
     background-color: #829c81;
 }
 
+.message-container button:hover {
+    background-color: #445143;
+    color: #bfccbe;
+}
+
 .message-container p {
     color: #fff;
 }
