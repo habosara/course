@@ -28,10 +28,18 @@ main {
     padding: 0 20px;
 }
 
+.mf-1 {
+    background: url(images/falloftheusherhouse.jpg) no-repeat center;
+}
+
+.mf-2 {
+    background: url(images/haunting-of-the-hill-house.jpg) no-repeat center;
+}
+
 .hero-container {
     max-width: 100%;
     height: 60vh;
-    background: url(images/falloftheusherhouse.jpg) no-repeat center;
+    /*background: url(images/falloftheusherhouse.jpg) no-repeat center;*/
     background-size: cover;
     position: relative;
     display: flex;
@@ -57,7 +65,8 @@ main {
     margin: 20px;
 }
 
-.hero-content p, h1 {
+.hero-content p,
+h1 {
     margin: 0;
 }
 
@@ -76,8 +85,44 @@ h2 {
     font-size: 1.8em;
 }
 
+.tldr {
+    text-decoration: none;
+    color: #829c81;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 600;
+}
+
+article a {
+    color: #445143;
+    font-weight: 600;
+}
+
 p {
     line-height: 150%;
+}
+
+.article-btn {
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    border: none;
+    background-color: #739072;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.article-btn:hover {
+    background-color: #bfccbe;
+    color: #739072;
 }
 
 .message-container {
@@ -92,13 +137,14 @@ p {
 }
 
 .message-container p {
-font-weight: 600;
-font-size: 18px;
-text-align: center;
-color: #739072;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #739072;
 }
 
-.message-container input, textarea {
+.message-container input,
+textarea {
     box-sizing: border-box;
     padding: 10px;
     border-radius: 6px;
@@ -108,21 +154,21 @@ color: #739072;
     font-family: inherit;
 }
 
-.message-container input:focus-visible{
+.message-container input:focus-visible {
     outline: none;
     border: 1.5px solid #739072;
 }
 
-.message-container textarea:focus-visible{
+.message-container textarea:focus-visible {
     outline: none;
     border: 1.5px solid #739072;
 }
 
-.message-container label{
+.message-container label {
     display: block;
 }
 
-.message-container button{
+.message-container button {
     appearance: none;
     -webkit-appearance: none;
     box-sizing: border-box;
@@ -136,6 +182,13 @@ color: #739072;
     font-size: inherit;
     cursor: pointer;
     width: 100%;
+    transition: all 0.3s linear;
+}
+
+.message-container button:hover {
+    background-color: #cddbcd;
+    color: #739072;
+
 }
 
 footer {
@@ -145,12 +198,60 @@ footer {
     padding: 20px;
     display: flex;
     justify-content: center;
-    
+
 }
 
-footer a{
+footer a {
     text-decoration: none;
     font-style: italic;
     font-size: 1em;
     color: #fff;
+}
+
+@media screen and (max-width: 425px) {
+
+    .article-btn {
+        margin: 20px auto;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    .message-container {
+        background-color: #282828;
+        box-shadow: none;
+    }
+
+    .message-container input,
+    textarea {
+        background-color: #3f3f3f;
+        border: 1px solid #3f3f3f;
+    }
+
+    .message-container input::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .message-container button {
+        background-color: #829c81;
+    }
+
+    .message-container button:hover {
+        background-color: #445143;
+        color: #bfccbe;
+    }
+
+    .message-container p {
+        color: #fff;
+    }
+
 }
