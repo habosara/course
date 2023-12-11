@@ -1,3 +1,11 @@
+:root {
+    --light-text-color: #333333;
+    --dark-text-color: rgba(255, 255, 255, 0.8);
+    --green-theme-bg-light: #f7f2f3;
+    --green-theme-primary: #739072;
+    --green-theme-link: #829c81;
+}
+
 body {
     background-color: #ECE3CE;
     font-size: 16px;
