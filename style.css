@@ -154,6 +154,14 @@ textarea {
     font-family: inherit;
 }
 
+.form-floating>.form-control {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+}
+
+.form-floating>.msg-box {
+    height: 160px;
+}
+
 .message-container input:focus-visible {
     outline: none;
     border: 1.5px solid #739072;
@@ -189,6 +197,16 @@ textarea {
     background-color: #cddbcd;
     color: #739072;
 
+}
+
+.btn-primary {
+    background-color: #739072;
+}
+
+.btn-primary:hover {
+    background-color: #cddbcd;
+    color: #739072;
+    border-color: #cddbcd;
 }
 
 footer {
