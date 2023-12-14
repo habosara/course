@@ -9,6 +9,7 @@
     --green-secondary-light: #bfccbe;
     --green-canvas-dark: #121212;
     --green-surface-dark: #282828;
+    --green-fields-dark: #3f3f3f;
     --green-primary-dark: #829c81;
 
 }
@@ -266,21 +267,33 @@ footer a {
 
     .message-container input,
     textarea {
-        background-color: #3f3f3f;
-        border: 1px solid #3f3f3f;
+        background-color: var(--green-fields-dark);
+        border: 1px solid var(--green-fields-dark);
+    }
+
+    .msg-box {
+        background-color: var(--green-fields-dark);
+    }
+
+    .form-floating>.form-control {
+        border: unset;
     }
 
     .message-container input::placeholder {
         color: rgba(255, 255, 255, 0.6);
     }
 
-    .message-container button {
-        background-color: #829c81;
+    .message-container .btn-primary {
+        background-color: var(--green-primary-dark);
     }
 
-    .message-container button:hover {
-        background-color: #445143;
-        color: #bfccbe;
+    .message-container .btn-primary:hover {
+        background-color: unset;
+        border: 1px solid var(--green-primary-dark);
+    }
+
+    .message-container button {
+        background-color: var(--green-primary-dark);
     }
 
     .message-container p {
