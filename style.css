@@ -11,7 +11,14 @@
     --green-surface-dark: #282828;
     --green-fields-dark: #3f3f3f;
     --green-primary-dark: #829c81;
-
+    /*PUPRPLE theme colors*/
+    --purple-canvas-light: #E0D8E7;
+    --purple-surface-light: #fff;
+    --purple-primary-light: #4F29B1;
+    --purple-canvas-dark: #1A1520;
+    --purple-surface-dark: #2F2A35;
+    --purple-fields-dark: #46414b;
+    --purple-primary-dark: #906ECC;
 }
 
 body {
