@@ -72,6 +72,11 @@ main {
     background-color: #EEF43B;
 }
 
+mark {
+    padding: 0;
+    background-color: #EEF43B;
+}
+
 .mf-1 {
     background: url(images/falloftheusherhouse.jpg) no-repeat center;
 }
