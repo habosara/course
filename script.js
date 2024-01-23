@@ -1,3 +1,4 @@
+//READING TIME
 /*function readingTime() {
     const text = document.getElementById("article").innerText;
     const wpm = 225;
@@ -22,6 +23,8 @@ if (document.readyState !== "loading") {
     document.addEventListener("DOMContentLoaded", readingTime);
 }
 
+
+//HIGHLIGHT INPUT TEXT
 
 /*window.onload = function () {
     const page = document.querySelector('main');
@@ -100,7 +103,6 @@ if (document.readyState !== "loading") {
 }*/
 
 
-
 window.onload = function () {
     // Create an instance of mark.js and pass an argument containing
     // the DOM object of the context (where to search for matches)
@@ -135,3 +137,47 @@ window.onload = function () {
         optionInputs[i].addEventListener("change", performMark);
     }
 }
+
+
+
+//API CALL
+// Function to fetch data from the API
+async function fetchUsers() {
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        const users = await response.json();
+        return users;
+    } catch (error) {
+        console.error('Error fetching user data:', error);
+    }
+}
+
+// Function to insert random user info after the article
+async function insertRandomUserInfo() {
+    const users = await fetchUsers();
+
+    if (users) {
+        // Choose a random user from the list
+        const randomUser = users[Math.floor(Math.random() * users.length)];
+
+        // Create a new div element for the user info
+        const userInfoDiv = document.createElement('div');
+        userInfoDiv.className = 'author-info';
+
+        // Display user information
+        userInfoDiv.innerHTML = `
+        <p>Szerző:</p>
+        <p>Név: ${randomUser.name}</p>
+        <p>E-mail: <a href="mailto:${randomUser.email}">${randomUser.email}</a></p>
+        <p>Telefon: ${randomUser.phone}</p>
+        <p>Cég: ${randomUser.company.name}</p>
+      `;
+
+        // Append the user info after the article
+        const article = document.getElementById('article');
+        article.appendChild(userInfoDiv);
+    }
+}
+
+// Call the function when the page is loaded
+window.onload = insertRandomUserInfo;
