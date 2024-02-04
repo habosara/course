@@ -39,16 +39,42 @@ header {
 nav {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
     width: 120px;
 }
 
+#search {
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    outline: none;
+    padding: 0 10px;
+    transition: all 0.5s;
+    width: 100%;
+}
+
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.highlight {
+    background-color: #EEF43B;
+}
+
+mark {
+    padding: 0;
+    background-color: #EEF43B;
 }
 
 .mf-1 {
@@ -146,6 +172,22 @@ p {
 .article-btn:hover {
     background-color: var(--green-secondary-light);
     color: var(--green-primary-light);
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+.author-info p {
+    margin-bottom: 0;
+}
+
+.author-info p:nth-child(1) {
+    font-weight: 600;
 }
 
 .message-container {
