@@ -1,8 +1,8 @@
 :root {
-    /*TEXT colors*/
+    /*TEXT colors
     --text-color-light: #2B2C30;
     --text-color-dark: #D0D0D0;
-    /*GREEN theme colors*/
+    /*GREEN theme colors
     --green-canvas-light: #EDF1E6;
     --green-surface-light: #fff;
     --green-primary-light: #739072;
@@ -11,27 +11,47 @@
     --green-surface-dark: #282828;
     --green-fields-dark: #3f3f3f;
     --green-primary-dark: #829c81;
-    /*PUPRPLE theme colors*/
+    /*PUPRPLE theme colors
     --purple-canvas-light: #E0D8E7;
     --purple-surface-light: #fff;
     --purple-primary-light: #4F29B1;
     --purple-canvas-dark: #1A1520;
     --purple-surface-dark: #2F2A35;
     --purple-fields-dark: #46414b;
-    --purple-primary-dark: #906ECC;
+    --purple-primary-dark: #906ECC;*/
+}
+
+[data-theme="light"] {
+    --text-color: #2B2C30;
+    --green-canvas: #EDF1E6;
+    --green-surface: #fff;
+    --green-primary: #739072;
+    --green-secondary: #bfccbe;
+    --theme-btn: #354535;
+    --theme-text: #fff;
+}
+
+[data-theme="dark"] {
+    --text-color: #D0D0D0;
+    --green-canvas: #121212;
+    --green-surface: #282828;
+    --green-fields-dark: #3f3f3f;
+    --green-primary: #829c81;
+    --theme-btn: #fff;
+    --theme-text: #282828;
 }
 
 body {
-    background-color: var(--green-canvas-light);
+    background-color: var(--green-canvas);
     font-size: 16px;
     font-family: 'Figtree', sans-serif;
-    color: var(--text-color-light);
+    color: var(--text-color);
     margin: 0;
 }
 
 header {
     max-width: 100%;
-    background-color: var(--green-primary-light);
+    background-color: var(--green-primary);
     box-sizing: border-box;
     padding: 20px;
 }
@@ -48,6 +68,12 @@ nav {
     width: 120px;
 }
 
+.menu-right {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 #search {
     background: #fff;
     border: 1px solid #fff;
@@ -60,6 +86,19 @@ nav {
     padding: 0 10px;
     transition: all 0.5s;
     width: 100%;
+}
+
+#theme-btn {
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: var(--theme-btn);
+    color: var(--theme-text);
+    border: 0;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 main {
@@ -126,7 +165,7 @@ h1 {
 }
 
 .hero-content h1 {
-    color: var(--green-primary-light);
+    color: var(--green-primary);
     font-size: 2.6em;
 }
 
@@ -136,14 +175,14 @@ h2 {
 
 .tldr {
     text-decoration: none;
-    color: var(--green-primary-light);
+    color: var(--green-primary);
     font-size: 1em;
     font-style: italic;
     font-weight: 600;
 }
 
 article a {
-    color: var(--green-primary-light);
+    color: var(--green-primary);
     font-weight: 600;
 }
 
@@ -159,7 +198,7 @@ p {
     box-sizing: border-box;
     padding: 15px 20px;
     border: none;
-    background-color: var(--green-primary-light);
+    background-color: var(--green-primary);
     border-radius: 6px;
     color: #fff;
     font-weight: 500;
@@ -170,8 +209,8 @@ p {
 }
 
 .article-btn:hover {
-    background-color: var(--green-secondary-light);
-    color: var(--green-primary-light);
+    background-color: var(--green-secondary);
+    color: var(--green-primary);
 }
 
 .author-info {
@@ -191,7 +230,7 @@ p {
 }
 
 .message-container {
-    background-color: var(--green-surface-light);
+    background-color: var(--green-surface);
     border-radius: 8px;
     width: 400px;
     box-sizing: border-box;
@@ -205,7 +244,7 @@ p {
     font-weight: 600;
     font-size: 18px;
     text-align: center;
-    color: var(--green-primary-light);
+    color: var(--green-primary);
 }
 
 .message-container input,
@@ -229,12 +268,12 @@ textarea {
 
 .message-container input:focus-visible {
     outline: none;
-    border: 1.5px solid var(--green-primary-light);
+    border: 1.5px solid var(--green-primary);
 }
 
 .message-container textarea:focus-visible {
     outline: none;
-    border: 1.5px solid var(--green-primary-light);
+    border: 1.5px solid var(--green-primary);
 }
 
 .message-container label {
@@ -247,7 +286,7 @@ textarea {
     box-sizing: border-box;
     padding: 10px;
     border: none;
-    background-color: var(--green-primary-light);
+    background-color: var(--green-primary);
     border-radius: 6px;
     color: #fff;
     font-weight: 500;
@@ -259,24 +298,24 @@ textarea {
 }
 
 .message-container button:hover {
-    background-color: var(--green-secondary-light);
-    color: var(--green-primary-light);
+    background-color: var(--green-secondary);
+    color: var(--green-primary);
 
 }
 
 .btn-primary {
-    background-color: var(--green-primary-light);
+    background-color: var(--green-primary);
 }
 
 .btn-primary:hover {
-    background-color: var(--green-secondary-light);
-    color: var(--green-primary-light);
-    border-color: var(--green-secondary-light);
+    background-color: var(--green-secondary);
+    color: var(--green-primary);
+    border-color: var(--green-secondary);
 }
 
 footer {
     max-width: 100%;
-    background-color: var(--green-primary-light);
+    background-color: var(--green-primary);
     box-sizing: border-box;
     padding: 20px;
     display: flex;
@@ -301,7 +340,7 @@ footer a {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: var(--green-canvas-dark);
+        background-color: var(--green-canvas);
         color: var(--text-color-dark);
     }
 
@@ -310,7 +349,7 @@ footer a {
     }
 
     .message-container {
-        background-color: var(--green-surface-dark);
+        background-color: var(--green-surface);
         box-shadow: none;
     }
 
@@ -333,16 +372,16 @@ footer a {
     }
 
     .message-container .btn-primary {
-        background-color: var(--green-primary-dark);
+        background-color: var(--green-primary);
     }
 
     .message-container .btn-primary:hover {
         background-color: unset;
-        border: 1px solid var(--green-primary-dark);
+        border: 1px solid var(--green-primary);
     }
 
     .message-container button {
-        background-color: var(--green-primary-dark);
+        background-color: var(--green-primary);
     }
 
     .message-container p {
