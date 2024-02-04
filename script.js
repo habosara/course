@@ -179,5 +179,11 @@ async function insertRandomUserInfo() {
     }
 }
 
-// Call the function when the page is loaded
-window.onload = insertRandomUserInfo;
+/* Call the function when the page is loaded
+window.onload = insertRandomUserInfo;*/
+
+if (document.readyState !== "loading") {
+    insertRandomUserInfo();
+} else {
+    document.addEventListener("DOMContentLoaded", insertRandomUserInfo);
+}
