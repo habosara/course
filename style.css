@@ -29,16 +29,25 @@
     --green-secondary: #bfccbe;
     --theme-btn: #354535;
     --theme-text: #fff;
+    --green-fields: #fff;
+    --green-fields-border: #c1cfc0;
+    --sc1: rgba(207, 200, 183, 0.6);
+    --sc2: rgba(99, 93, 80, 0.1);
+
 }
 
 [data-theme="dark"] {
     --text-color: #D0D0D0;
     --green-canvas: #121212;
     --green-surface: #282828;
-    --green-fields-dark: #3f3f3f;
+    --green-fields: #3f3f3f;
+    --green-fields-border: #3f3f3f;
     --green-primary: #829c81;
+    --green-secondary: #354535;
     --theme-btn: #fff;
     --theme-text: #282828;
+    --sc1: rgba(207, 200, 183, 0);
+    --sc2: rgba(99, 93, 80, 0);
 }
 
 body {
@@ -62,6 +71,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .logo {
@@ -237,7 +248,7 @@ p {
     padding: 20px;
     margin: 30px auto;
     max-width: 100%;
-    box-shadow: rgba(207, 200, 183, 0.6) 0px 20px 25px -5px, rgba(99, 93, 80, 0.1) 0px 10px 10px -5px;
+    box-shadow: var(--sc1) 0px 20px 25px -5px, var(--sc2) 0px 10px 10px -5px;
 }
 
 .message-container p {
@@ -252,18 +263,20 @@ textarea {
     box-sizing: border-box;
     padding: 10px;
     border-radius: 6px;
-    border: 1px solid #c1cfc0;
     margin: 5px 0 15px 0;
     width: 100%;
     font-family: inherit;
+    background-color: var(--green-fields);
+    border: 1px solid var(--green-fields-border);
 }
 
 .form-floating>.form-control {
-    border: var(--bs-border-width) solid var(--bs-border-color);
+    border: var(--bs-border-width) solid var(--green-fields-border);
 }
 
 .form-floating>.msg-box {
     height: 160px;
+    background-color: var(--green-fields);
 }
 
 .message-container input:focus-visible {
@@ -336,6 +349,10 @@ footer a {
         margin: 20px auto;
     }
 
+    nav {
+        justify-content: center;
+    }
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -355,8 +372,8 @@ footer a {
 
     .message-container input,
     textarea {
-        background-color: var(--green-fields-dark);
-        border: 1px solid var(--green-fields-dark);
+        background-color: var(--green-fields);
+        border: 1px solid var(--green-fields);
     }
 
     .msg-box {
