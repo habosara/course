@@ -105,7 +105,7 @@ nav {
     background-color: var(--theme-btn);
     color: var(--theme-text);
     border: 0;
-    width: 75px;
+    width: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -316,11 +316,11 @@ textarea {
 
 }
 
-.btn-primary {
+.message-container .btn-primary {
     background-color: var(--green-primary);
 }
 
-.btn-primary:hover {
+.message-container .btn-primary:hover {
     background-color: var(--green-secondary);
     color: var(--green-primary);
     border-color: var(--green-secondary);
@@ -343,7 +343,7 @@ footer a {
     color: #fff;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 460px) {
 
     .article-btn {
         margin: 20px auto;
@@ -351,6 +351,7 @@ footer a {
 
     nav {
         justify-content: center;
+        flex-direction: column;
     }
 
 }
