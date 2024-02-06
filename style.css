@@ -356,7 +356,7 @@ footer a {
 
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     body {
         background-color: var(--green-canvas);
         color: var(--text-color-dark);
@@ -406,4 +406,4 @@ footer a {
         color: #fff;
     }
 
-}
+}*/
