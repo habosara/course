@@ -25,14 +25,16 @@
     --text-color: #2B2C30;
     --green-canvas: #EDF1E6;
     --green-surface: #fff;
-    --green-primary: #739072;
-    --green-secondary: #bfccbe;
+    --green-primary: #3D563C;
+    --green-secondary: #3F5F3E;
+    --link-color: #3D563C;
     --theme-btn: #354535;
     --theme-text: #fff;
     --green-fields: #fff;
     --green-fields-border: #c1cfc0;
     --sc1: rgba(207, 200, 183, 0.6);
     --sc2: rgba(99, 93, 80, 0.1);
+    --bs-link-color-rgb: #fff;
 
 }
 
@@ -42,12 +44,14 @@
     --green-surface: #282828;
     --green-fields: #3f3f3f;
     --green-fields-border: #3f3f3f;
-    --green-primary: #829c81;
-    --green-secondary: #354535;
+    --green-primary: #3D563C;
+    --green-secondary: #A1BFA0;
+    --link-color: #A1BFA0;
     --theme-btn: #fff;
     --theme-text: #282828;
     --sc1: rgba(207, 200, 183, 0);
     --sc2: rgba(99, 93, 80, 0);
+    --bs-link-color-rgb: #fff;
 }
 
 body {
@@ -130,11 +134,11 @@ mark {
 }
 
 .mf-1 {
-    background: url(images/falloftheusherhouse.jpg) no-repeat center;
+    background: url(images/falloftheusherhouse.webp) no-repeat center;
 }
 
 .mf-2 {
-    background: url(images/haunting-of-the-hill-house.jpg) no-repeat center;
+    background: url(images/haunting-of-the-hill-house.webp) no-repeat center;
 }
 
 .hero-container {
@@ -154,9 +158,9 @@ mark {
     width: 100%;
     height: 100%;
     background: rgb(25, 34, 25);
-    background: -moz-linear-gradient(0deg, rgba(25, 34, 25, 1) 0%, rgba(58, 77, 57, 0) 63%);
-    background: -webkit-linear-gradient(0deg, rgba(25, 34, 25, 1) 0%, rgba(58, 77, 57, 0) 63%);
-    background: linear-gradient(0deg, rgba(25, 34, 25, 1) 0%, rgba(58, 77, 57, 0) 63%);
+    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 63%);
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 63%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 63%);
 }
 
 .hero-content {
@@ -188,14 +192,14 @@ h2 {
 
 .tldr {
     text-decoration: none;
-    color: var(--green-primary);
+    color: var(--link-color);
     font-size: 1em;
     font-style: italic;
     font-weight: 600;
 }
 
 article a {
-    color: var(--green-primary);
+    color: var(--link-color);
     font-weight: 600;
 }
 
@@ -223,7 +227,7 @@ p {
 
 .article-btn:hover {
     background-color: var(--green-secondary);
-    color: var(--green-primary);
+    color: var(--theme-text);
 }
 
 .author-info {
@@ -257,7 +261,7 @@ p {
     font-weight: 600;
     font-size: 18px;
     text-align: center;
-    color: var(--green-primary);
+    color: var(--green-secondary);
 }
 
 .message-container input,
@@ -324,7 +328,7 @@ textarea {
 
 .message-container .btn-primary:hover {
     background-color: var(--green-secondary);
-    color: var(--green-primary);
+    color: var(--theme-text);
     border-color: var(--green-secondary);
 }
 
