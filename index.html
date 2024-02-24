@@ -38,10 +38,10 @@
             <a href="#footer" id="navigation"><img src="images/reviews_logo_wht.svg" alt="reviews&more logo"
                     class="logo"></a>
             <div class="menu-right">
-                <div class="search-container"><input id="search" placeholder="Keresés" name="search" type="search"
-                        autocomplete="off" />
+                <div class="search-container"><input id="search" placeholder="Keresés" aria-label="Keresés az oldalon"
+                        name="search" type="search" autocomplete="off" />
                 </div>
-                <button type="button" id="theme-btn" aria-label="Change to light theme" data-theme-toggle><span
+                <button type="button" id="theme-btn" aria-label="Téma váltás" data-theme-toggle><span
                         class="material-symbols-outlined">
                         dark_mode
                     </span>Dark</button>
@@ -216,7 +216,8 @@
                 Ezzel párhuzamosan pedig bepillantást kapunk a közelmúlt eseményeibe: miként hullottak el egyenként
                 Roderick gyermekei.</p>
 
-            <a href="https://www.netflix.com/hu/title/81414665" target="_blank" class="article-btn">
+            <a href="https://www.netflix.com/hu/title/81414665" target="_blank" class="article-btn"
+                aria-label="Ugrás a sorozathoz">
                 Ugrás a sorozathoz
             </a>
 
@@ -247,7 +248,7 @@
                     <textarea class="form-control msg-box" placeholder="Ide írd az üzeneted" id="message"></textarea>
                     <label for="message">Üzenet</label>
                 </div>
-                <input class="btn btn-primary" type="submit" value="Küldés">
+                <button class="btn btn-primary" type="submit" value="Küldés" aria-label="Küldés">Küldés</button>
             </form>
         </div>
         <!--<div class="message-container">
